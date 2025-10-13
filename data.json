@@ -117,7 +117,7 @@
         "id": "spiral-optimization",
         "title": "Spiral Optimization Framework",
         "description": "Development of spiral-enhanced metaheuristic algorithms for feature selection and optimization in imbalanced wildfire and environmental datasets.",
-        "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center",
+        "thumbnail": "https://www.mdpi.com/fractalfract/fractalfract-06-00027/article_deploy/html/images/fractalfract-06-00027-g010-550.jpg",
         "techStack": ["Python", "NumPy", "Scikit-learn", "Matplotlib"],
         "results": [
           {

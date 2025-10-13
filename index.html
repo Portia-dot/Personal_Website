@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modamori Oluwayomi - Data Analyst | Geospatial & Machine Learning Researcher</title>
+    <meta name="description" content="Data Analyst and Geospatial & Machine Learning Researcher exploring intelligent systems for environmental modeling and AI optimization">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Charter:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">Modamori Oluwayomi</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="library.html" class="nav-link">Library</a>
+                <a href="Modamori Oluwayomi Curriculum vitae.pdf" class="nav-link" target="_blank">CV</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/portia-dot" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/modamori/" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://scholar.google.ca/citations?user=ElEms3kAAAAJ&hl=en" class="social-link" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container-main">
+                <h1 class="hero-title">Modamori Oluwayomi</h1>
+                <p class="hero-subtitle">Machine Learning & Geospatial Researcher | Data Analyst</p>
+                <p class="hero-bio">
+                    Exploring intelligent systems that connect simulation, computer vision, and large language models to real-world environmental and autonomous applications. My work spans geospatial analytics, metaheuristic optimization, and reinforcement learning, focusing on building interpretable and efficient AI systems for risk prediction, simulation-based reasoning, and decision intelligence.
+                </p>
+                <a href="projects.html" class="btn btn-primary">View Projects</a>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="featured-projects">
+            <div class="container-main">
+                <h2 class="section-title">Featured Research</h2>
+                <div class="grid-columns-3" id="featured-projects">
+                    <!-- Projects will be loaded from data.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Publications -->
+        <section class="recent-publications">
+            <div class="container-main">
+                <h2 class="section-title">Recent Publications</h2>
+                <div class="publications-list" id="recent-publications">
+                    <!-- Publications will be loaded from data.json -->
+                </div>
+                <div class="text-center">
+                    <a href="projects.html" class="btn btn-outline">View All Publications</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-main">
+            <div class="footer-content">
+                <p>&copy; 2025 Modamori Oluwayomi</p>
+                <a href="https://github.com/portia-dot" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/modamori/" class="footer-link">LinkedIn</a>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

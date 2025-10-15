@@ -89,27 +89,11 @@
         </section>
 
         <!-- Recent Publications -->
-        <section class="recent-publications">
+        <section class="publications-section">
             <div class="container-main">
                 <h2 class="section-title">Recent Publications</h2>
-                <div class="publications-list">
-                    <div class="publication-item" v-for="pub in recentPublications" :key="pub.title">
-                        <h3 class="publication-title">
-                            <template v-if="pub.doi">
-                                <a :href="pub.doi" target="_blank">{{ pub.title }}</a>
-                            </template>
-                            <template v-else>
-                                {{ pub.title }}
-                            </template>
-                            <span class="status-badge under-review" v-if="pub.status">{{ pub.status }}</span>
-                        </h3>
-                        <p class="publication-authors">{{ pub.authors }}</p>
-                        <p class="publication-venue">{{ pub.venue }} ({{ pub.year }})</p>
-                        <p class="publication-description" v-if="pub.description">{{ pub.description }}</p>
-                        <div class="publication-keywords">
-                            <span class="keyword-tag" v-for="kw in pub.keywords" :key="kw">{{ kw }}</span>
-                        </div>
-                    </div>
+                <div class="publications-list" id="recent-publications">
+                    <!-- Publications will be loaded from data.json -->
                 </div>
                 <div class="text-center">
                     <a href="projects.html" class="btn btn-outline">View All Publications</a>

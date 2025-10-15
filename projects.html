@@ -30,9 +30,7 @@
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Vue 3 (CDN) -->
-    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-</head>
+</head> 
 <body>
     <!-- Header -->
     <header class="header">
@@ -67,7 +65,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main" id="app">
+    <main class="main">
         <!-- Projects Hero -->
         <section class="projects-hero">
             <div class="container-main">
@@ -77,60 +75,21 @@
         </section>
 
         <!-- Publications Section -->
-        <section class="publications-section" v-cloak>
+        <section class="publications-section">
             <div class="container-main">
                 <h2 class="section-title">Publications</h2>
-                <div class="publications-list">
-                    <div class="publication-item" v-for="pub in publications" :key="pub.title">
-                        <h3 class="publication-title">
-                            <template v-if="pub.doi">
-                                <a :href="pub.doi" target="_blank">{{ pub.title }}</a>
-                            </template>
-                            <template v-else>
-                                {{ pub.title }}
-                            </template>
-                            <span class="status-badge under-review" v-if="pub.status">{{ pub.status }}</span>
-                        </h3>
-                        <p class="publication-authors">{{ pub.authors }}</p>
-                        <p class="publication-venue">{{ pub.venue }} ({{ pub.year }})</p>
-                        <p class="publication-description" v-if="pub.description">{{ pub.description }}</p>
-                        <div class="publication-keywords">
-                            <span class="keyword-tag" v-for="kw in pub.keywords" :key="kw">{{ kw }}</span>
-                        </div>
-                    </div>
+                <div class="publications-list" id="publications-list">
+                    <!-- Publications will be loaded from data.json -->
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="projects-section" v-cloak>
+        <section class="projects-section">
             <div class="container-main">
                 <h2 class="section-title">Research Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-detail" v-for="project in projects" :id="project.id" :key="project.id">
-                        <div class="project-status in-progress" v-if="project.status">{{ project.status }}</div>
-                        <img :src="project.thumbnail" :alt="project.title" class="project-thumbnail">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                        <div class="tech-stack" v-if="project.techStack && project.techStack.length">
-                            <h4>Technologies:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag" v-for="tech in project.techStack" :key="tech">{{ tech }}</span>
-                            </div>
-                        </div>
-                        <table class="results-table" v-if="project.results && project.results.length && project.status !== 'In Progress'">
-                            <thead>
-                                <tr>
-                                    <th v-for="(v, k) in project.results[0]" :key="k">{{ k }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(row, idx) in project.results" :key="idx">
-                                    <td v-for="(v, k) in row" :key="k">{{ v }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded from data.json -->
                 </div>
             </div>
         </section>
@@ -158,6 +117,5 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script defer src="app.js"></script>
 </body>
 </html>

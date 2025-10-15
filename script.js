@@ -14,8 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeBackToTop();
   initializeContactForm();
   initializeThemeToggle();
-  // Avoid duplicate rendering if Vue app is active
-  if (!window.__VUE_APP_ACTIVE__) {
+  // Load content if Vue app is not active or if we're on projects page
+  if (
+    !window.__VUE_APP_ACTIVE__ ||
+    window.location.pathname.includes("projects.html")
+  ) {
     loadContent();
   }
   initializeMathJax();
@@ -247,7 +250,9 @@ function initializeThemeToggle() {
   const themeToggle = document.getElementById("theme-toggle");
   const themeIcon = document.getElementById("theme-icon");
 
-  if (!themeToggle || !themeIcon) return;
+  if (!themeToggle || !themeIcon) {
+    return;
+  }
 
   // Check for saved theme preference or default to light mode
   const currentTheme = localStorage.getItem("theme") || "light";

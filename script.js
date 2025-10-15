@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeBackToTop();
   initializeContactForm();
   initializeThemeToggle();
-  loadContent();
+  // Avoid duplicate rendering if Vue app is active
+  if (!window.__VUE_APP_ACTIVE__) {
+    loadContent();
+  }
   initializeMathJax();
   initializeCodeHighlighting();
 });

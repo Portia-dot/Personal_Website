@@ -1901,11 +1901,6 @@ code {
   display: block;
 }
 
-/* Hide uncompiled Vue templates until mounted */
-[v-cloak] {
-  display: none;
-}
-
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .container-main {

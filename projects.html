@@ -7,30 +7,14 @@
     <meta name="description" content="Research projects and publications by Modamori Oluwayomi">
     
     <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=Charter:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- MathJax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            }
-        };
-    </script>
-    
-    <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-</head> 
+</head>
 <body>
     <!-- Header -->
     <header class="header">
@@ -78,8 +62,55 @@
         <section class="publications-section">
             <div class="container-main">
                 <h2 class="section-title">Publications</h2>
-                <div class="publications-list" id="publications-list">
-                    <!-- Publications will be loaded from data.json -->
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <h3 class="publication-title">
+                            <a href="#" target="_blank">Improved Energy Valley Optimizer for Wildfire Prediction</a>
+                            <span class="status-badge under-review">Under review</span>
+                        </h3>
+                        <p class="publication-authors">Oluwayomi, M.</p>
+                        <p class="publication-venue">Environmental Modelling & Software (2025)</p>
+                        <p class="publication-description">Benchmarks the Energy Valley Optimizer and spiral variants for province-specific wildfire forecasting across Canada.</p>
+                        <div class="publication-keywords">
+                            <span class="keyword-tag">Wildfire Prediction</span>
+                            <span class="keyword-tag">Energy Valley Optimizer</span>
+                            <span class="keyword-tag">Metaheuristics</span>
+                            <span class="keyword-tag">Environmental Modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <h3 class="publication-title">
+                            <a href="#" target="_blank">Spiral-Enhanced Liver Cancer Algorithm for Feature Selection</a>
+                            <span class="status-badge under-review">Under review</span>
+                        </h3>
+                        <p class="publication-authors">Oluwayomi, M.</p>
+                        <p class="publication-venue">Journal of Computational Science (2025)</p>
+                        <p class="publication-description">Introduces spiral-based feature-selection method improving sensitivity in imbalanced datasets.</p>
+                        <div class="publication-keywords">
+                            <span class="keyword-tag">Feature Selection</span>
+                            <span class="keyword-tag">Spiral Optimization</span>
+                            <span class="keyword-tag">Wildfire Prediction</span>
+                            <span class="keyword-tag">Metaheuristics</span>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <h3 class="publication-title">
+                            <a href="#" target="_blank">Advanced Wildfire Prediction with Machine Learning</a>
+                            <span class="status-badge published">Published</span>
+                        </h3>
+                        <p class="publication-authors">Oluwayomi, M.</p>
+                        <p class="publication-venue">MSc Thesis, Thompson Rivers University Library (2025)</p>
+                        <p class="publication-description">Comprehensive thesis exploring machine learning approaches for wildfire prediction using metaheuristic optimization and spiral-based algorithms.</p>
+                        <div class="publication-keywords">
+                            <span class="keyword-tag">Wildfire Prediction</span>
+                            <span class="keyword-tag">Machine Learning</span>
+                            <span class="keyword-tag">Metaheuristics</span>
+                            <span class="keyword-tag">Feature Selection</span>
+                            <span class="keyword-tag">Thesis</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,12 +119,114 @@
         <section class="projects-section">
             <div class="container-main">
                 <h2 class="section-title">Research Projects</h2>
-                <div class="projects-grid" id="projects-grid">
-                    <!-- Projects will be loaded from data.json -->
+                <div class="projects-grid">
+                    <div class="project-detail" id="spiral-optimization">
+                        <img src="https://www.mdpi.com/fractalfract/fractalfract-06-00027/article_deploy/html/images/fractalfract-06-00027-g010-550.jpg" alt="Spiral Optimization Framework" class="project-thumbnail">
+                        <h3>Spiral Optimization Framework</h3>
+                        <p>Development of spiral-enhanced metaheuristic algorithms for feature selection and optimization in imbalanced wildfire and environmental datasets.</p>
+                        <div class="tech-stack">
+                            <h4>Technologies:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                        </div>
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Algorithm</th>
+                                    <th>Accuracy</th>
+                                    <th>F1-Score</th>
+                                    <th>Time (s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Spiral-Enhanced</td>
+                                    <td>94.2%</td>
+                                    <td>0.91</td>
+                                    <td>2.3</td>
+                                </tr>
+                                <tr>
+                                    <td>PSO</td>
+                                    <td>89.1%</td>
+                                    <td>0.85</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td>GA</td>
+                                    <td>87.3%</td>
+                                    <td>0.82</td>
+                                    <td>3.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="project-detail" id="simulation-rl">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&crop=center" alt="Simulation-Driven Reinforcement Learning" class="project-thumbnail">
+                        <h3>Simulation-Driven Reinforcement Learning</h3>
+                        <p>Design of multi-fidelity simulation environments that bridge physical data and AI models, improving generalization and decision-making in safety-critical domains.</p>
+                        <div class="tech-stack">
+                            <h4>Technologies:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">OpenAI Gym</span>
+                                <span class="tech-tag">TensorBoard</span>
+                            </div>
+                        </div>
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Environment</th>
+                                    <th>Success Rate</th>
+                                    <th>Episodes</th>
+                                    <th>Reward</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>High-Fidelity</td>
+                                    <td>87.3%</td>
+                                    <td>1000</td>
+                                    <td>0.92</td>
+                                </tr>
+                                <tr>
+                                    <td>Medium-Fidelity</td>
+                                    <td>82.1%</td>
+                                    <td>500</td>
+                                    <td>0.88</td>
+                                </tr>
+                                <tr>
+                                    <td>Low-Fidelity</td>
+                                    <td>76.8%</td>
+                                    <td>250</td>
+                                    <td>0.84</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="project-detail" id="vision-language">
+                        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&h=250&fit=crop&crop=center" alt="Vision-Language Grounding for Environmental AI" class="project-thumbnail">
+                        <h3>Vision-Language Grounding for Environmental AI</h3>
+                        <p>Exploration of multimodal models integrating satellite imagery and textual reports through large language models for explainable geospatial reasoning.</p>
+                        <div class="tech-stack">
+                            <h4>Technologies:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Transformers</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Satellite Imagery</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -115,7 +248,38 @@
         <i class="fas fa-moon" id="theme-icon"></i>
     </button>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- Basic Scripts -->
+    <script>
+        // Simple theme toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (themeToggle && themeIcon) {
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+                
+                themeToggle.addEventListener('click', function() {
+                    const currentTheme = document.documentElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateThemeIcon(newTheme);
+                });
+            }
+            
+            function updateThemeIcon(theme) {
+                if (theme === 'dark') {
+                    themeIcon.className = 'fas fa-sun';
+                    themeToggle.classList.add('dark');
+                } else {
+                    themeIcon.className = 'fas fa-moon';
+                    themeToggle.classList.remove('dark');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
